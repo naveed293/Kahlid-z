@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------------------------------------------------------ */
+/* Base                                                                */
+/* ------------------------------------------------------------------ */
+@layer base {
+  :root {
+    color-scheme: light;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem; /* keeps anchors clear of the sticky navbar */
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display text-navy;
+    letter-spacing: -0.02em;
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+
+  /* Visible, consistent keyboard focus ring */
+  :focus-visible {
+    outline: 3px solid rgba(22, 119, 200, 0.65);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  ::selection {
+    background: rgba(32, 178, 170, 0.28);
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Components                                                          */
+/* ------------------------------------------------------------------ */
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold
+           transition-all duration-200 focus-visible:outline-none focus-visible:ring-2
+           focus-visible:ring-medical focus-visible:ring-offset-2 disabled:cursor-not-allowed
+           disabled:opacity-60;
+  }
+
+  .btn-primary {
+    @apply btn bg-medical text-white shadow-[0_10px_24px_rgba(22,119,200,0.28)] hover:bg-medical-700
+           hover:shadow-[0_14px_30px_rgba(22,119,200,0.34)] active:translate-y-px;
+  }
+
+  .btn-secondary {
+    @apply btn border border-navy-200 bg-white text-navy hover:border-medical hover:text-medical;
+  }
+
+  .btn-light {
+    @apply btn bg-white text-navy hover:bg-surface;
+  }
+
+  .card {
+    @apply rounded-2xl border border-navy-100/70 bg-white shadow-card;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-medical;
+  }
+
+  .link-muted {
+    @apply text-sm font-semibold text-medical hover:text-medical-700;
+  }
+
+  .field-label {
+    @apply mb-1.5 block text-sm font-semibold text-navy;
+  }
+
+  .field-input {
+    @apply w-full rounded-xl border border-navy-200 bg-white px-4 py-3 text-sm text-ink placeholder:text-muted/70
+           transition focus:border-medical focus:outline-none focus:ring-4 focus:ring-medical/15;
+  }
+
+  .field-error {
+    @apply mt-1.5 block text-xs font-semibold text-red-600;
+  }
+
+  .skip-link {
+    @apply sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg
+           focus:bg-navy focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Utilities                                                           */
+/* ------------------------------------------------------------------ */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .page-enter {
+    animation: pageEnter 0.35s ease-out both;
+  }
+
+  @keyframes pageEnter {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Honour the user's reduced-motion preference across the whole site */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

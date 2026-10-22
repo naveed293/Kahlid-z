@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" role="img" aria-labelledby="title">
+  <title id="title">Illustration of a brain</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#12304A" />
+      <stop offset="100%" stop-color="#1A3C5F" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#20B2AA" />
+      <stop offset="100%" stop-color="#1677C8" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="480" fill="url(#bg)" />
+  <circle cx="690" cy="70" r="150" fill="#1677C8" fill-opacity="0.28" />
+  <circle cx="90" cy="430" r="130" fill="#20B2AA" fill-opacity="0.16" />
+
+  <!-- Brain -->
+  <g transform="translate(250 70) scale(1.15)">
+    <path
+      d="M160 20c-33 0-60 20-67 49-33 7-57 35-57 68 0 22 10 42 27 55-3 10-5 20-5 31 0 47 38 85 85 85 22 0 43-8 58-23 15 15 36 23 58 23 47 0 85-38 85-85 0-11-2-21-5-31 17-13 27-33 27-55 0-33-24-61-57-68-7-29-34-49-67-49-21 0-40 8-54 21-14-13-33-21-54-21Z"
+      fill="url(#accent)"
+      fill-opacity="0.92"
+    />
+    <path
+      d="M160 62v196M112 108c18 6 30 22 30 42M214 108c-18 6-30 22-30 42M96 178c22 2 40 20 42 44M232 178c-22 2-40 20-42 44"
+      fill="none"
+      stroke="#FFFFFF"
+      stroke-opacity="0.75"
+      stroke-width="7"
+      stroke-linecap="round"
+    />
+  </g>
+
+  <circle cx="620" cy="360" r="10" fill="#20B2AA" />
+  <circle cx="660" cy="320" r="6" fill="#FFFFFF" fill-opacity="0.55" />
+  <circle cx="170" cy="120" r="7" fill="#FFFFFF" fill-opacity="0.4" />
+</svg>

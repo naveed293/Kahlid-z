@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" role="img" aria-labelledby="title">
+  <title id="title">Illustration of the spine</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#12304A" />
+      <stop offset="100%" stop-color="#1677C8" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#20B2AA" />
+      <stop offset="100%" stop-color="#79DCD5" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="480" fill="url(#bg)" />
+  <circle cx="120" cy="90" r="140" fill="#20B2AA" fill-opacity="0.18" />
+  <circle cx="700" cy="420" r="160" fill="#1677C8" fill-opacity="0.3" />
+
+  <!-- Vertebrae -->
+  <g transform="translate(330 50)">
+    <path d="M70 0C40 40 40 400 70 460" fill="none" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="10" stroke-linecap="round" />
+    <g fill="url(#accent)">
+      <rect x="24" y="8" width="94" height="44" rx="18" transform="rotate(-6 71 30)" />
+      <rect x="20" y="78" width="98" height="44" rx="18" transform="rotate(-3 69 100)" />
+      <rect x="18" y="148" width="102" height="44" rx="18" />
+      <rect x="20" y="218" width="98" height="44" rx="18" transform="rotate(3 69 240)" />
+      <rect x="24" y="288" width="94" height="44" rx="18" transform="rotate(6 71 310)" />
+      <rect x="30" y="358" width="90" height="44" rx="18" transform="rotate(9 75 380)" />
+    </g>
+    <g fill="#FFFFFF" fill-opacity="0.85">
+      <rect x="34" y="56" width="74" height="14" rx="7" />
+      <rect x="34" y="126" width="76" height="14" rx="7" />
+      <rect x="34" y="196" width="76" height="14" rx="7" />
+      <rect x="36" y="266" width="74" height="14" rx="7" />
+      <rect x="40" y="336" width="70" height="14" rx="7" />
+    </g>
+  </g>
+
+  <path d="M600 150c40 30 60 70 60 120" fill="none" stroke="#20B2AA" stroke-width="8" stroke-linecap="round" stroke-dasharray="2 22" />
+</svg>

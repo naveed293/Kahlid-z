@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" role="img" aria-labelledby="title">
+  <title id="title">Illustration of a consultation checklist</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#12304A" />
+      <stop offset="100%" stop-color="#1A3C5F" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1677C8" />
+      <stop offset="100%" stop-color="#20B2AA" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="480" fill="url(#bg)" />
+  <circle cx="120" cy="400" r="150" fill="#1677C8" fill-opacity="0.26" />
+  <circle cx="690" cy="90" r="120" fill="#20B2AA" fill-opacity="0.18" />
+
+  <!-- Clipboard -->
+  <g transform="translate(280 60)">
+    <rect x="0" y="18" width="240" height="330" rx="28" fill="url(#accent)" />
+    <rect x="76" y="0" width="88" height="44" rx="18" fill="#FFFFFF" fill-opacity="0.95" />
+    <rect x="26" y="72" width="188" height="258" rx="18" fill="#FFFFFF" fill-opacity="0.96" />
+  </g>
+
+  <!-- Checklist rows -->
+  <g transform="translate(316 152)">
+    <g>
+      <rect x="0" y="0" width="34" height="34" rx="10" fill="#20B2AA" />
+      <path d="M9 18l7 7 12-15" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+      <rect x="50" y="7" width="150" height="14" rx="7" fill="#DCE7F0" />
+    </g>
+    <g transform="translate(0 62)">
+      <rect x="0" y="0" width="34" height="34" rx="10" fill="#20B2AA" />
+      <path d="M9 18l7 7 12-15" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+      <rect x="50" y="7" width="126" height="14" rx="7" fill="#DCE7F0" />
+    </g>
+    <g transform="translate(0 124)">
+      <rect x="0" y="0" width="34" height="34" rx="10" fill="#B9CEE1" />
+      <rect x="50" y="7" width="150" height="14" rx="7" fill="#DCE7F0" />
+    </g>
+    <g transform="translate(0 186)">
+      <rect x="0" y="0" width="34" height="34" rx="10" fill="#B9CEE1" />
+      <rect x="50" y="7" width="110" height="14" rx="7" fill="#DCE7F0" />
+    </g>
+  </g>
+
+  <circle cx="640" cy="380" r="12" fill="#20B2AA" />
+  <circle cx="676" cy="344" r="7" fill="#FFFFFF" fill-opacity="0.5" />
+</svg>

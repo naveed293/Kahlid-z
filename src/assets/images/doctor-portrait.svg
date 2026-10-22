@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" role="img" aria-labelledby="title desc">
+  <title id="title">Portrait placeholder for Dr. Khalid Khan Zadran</title>
+  <desc id="desc">A neutral silhouette illustration used until an approved professional photograph is supplied.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#12304A" />
+      <stop offset="55%" stop-color="#1A3C5F" />
+      <stop offset="100%" stop-color="#1677C8" />
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#20B2AA" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#20B2AA" stop-opacity="0.15" />
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <rect width="600" height="750" fill="url(#bg)" />
+  <rect width="600" height="750" fill="url(#grid)" />
+  <circle cx="300" cy="290" r="185" fill="#FFFFFF" fill-opacity="0.06" />
+
+  <!-- Silhouette -->
+  <g fill="#FFFFFF" fill-opacity="0.9">
+    <circle cx="300" cy="255" r="88" />
+    <path d="M300 366c-96 0-172 62-186 148-3 17 8 30 25 30h322c17 0 28-13 25-30-14-86-90-148-186-148Z" />
+  </g>
+  <!-- Stethoscope accent -->
+  <path
+    d="M258 452v46c0 30 24 54 54 54s54-24 54-54v-14"
+    fill="none"
+    stroke="url(#glow)"
+    stroke-width="12"
+    stroke-linecap="round"
+  />
+  <circle cx="378" cy="470" r="18" fill="#20B2AA" />
+
+  <!-- Caption band -->
+  <rect x="0" y="618" width="600" height="132" fill="#0C2337" fill-opacity="0.72" />
+  <text
+    x="300"
+    y="668"
+    text-anchor="middle"
+    font-family="Manrope, Inter, Arial, sans-serif"
+    font-size="27"
+    font-weight="700"
+    fill="#FFFFFF"
+  >
+    Image unavailable
+  </text>
+  <text
+    x="300"
+    y="706"
+    text-anchor="middle"
+    font-family="Inter, Arial, sans-serif"
+    font-size="19"
+    fill="#B9CEE1"
+  >
+    Photograph could not be loaded
+  </text>
+</svg>
